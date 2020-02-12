@@ -3,6 +3,11 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
 
+p, h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
 .navbar{
     background-color:black;
     size: 20px 1vw;
@@ -38,19 +43,27 @@ font-family: 'Work Sans', sans-serif;
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-image: url('../../images/kirsten-drew-STP6oSg-0HU-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/dan-freeman-hIKVSVKH7No-unsplash.jpg');
 
 }
 
 #hero-header{
-    font-size: 50px;
+    font-size: 75px;
     font-weight: 900;
+    color: white;
+}
+
+.hero-text p{
+    font-size: 23px;
+    color: white;
+    font-weight: 800;
 }
 
 .aboutme{
-    height: 50vh;
+    height: 100vh;
     display: flex;
-
+    align-items: center;
+    padding: 0 20% 0 20%;
 
 }
 #aboutme-displaypic{ 
@@ -76,6 +89,5 @@ font-family: 'Work Sans', sans-serif;
     width: auto;
     display: flex;
     align-items: left;
-    justify-content: center;
     flex-direction: column;
 }
