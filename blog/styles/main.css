@@ -3,7 +3,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
 
-p, h1 {
+p, h1, h2, body{
   margin: 0px;
   padding: 0px;
 }
@@ -71,7 +71,7 @@ p, h1 {
     object-fit: contain;
     height: 300px;
     max-width: 300px;
-    border-color: rgb(13, 221, 186);
+    border-color: teal;
     border-width: 10px;
     border-style: solid;
 }
@@ -90,4 +90,24 @@ p, h1 {
     display: flex;
     align-items: left;
     flex-direction: column;
+}
+
+.blogsection{
+    height: 75vh;
+    width: auto;
+    background-color: darkcyan;
+}
+
+.blogsection{
+    color: white;
+}
+
+#blogintro{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/dan-freeman-hIKVSVKH7No-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+
 }
