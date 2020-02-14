@@ -1,6 +1,15 @@
 body{
 font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
+display: grid;
+  grid-template-columns: 1.5em 1fr 1fr 1.5em;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "hero hero hero hero"
+    ". aboutme aboutme ."
+    ". bloglink bloglink ."
+    "footer footer footer footer";
 }
 
 html {
@@ -13,6 +22,7 @@ p, h1, h2, body{
 }
 
 .navbar{
+    grid-area: header;
     background-color:black;
     size: 20px 1vw;
     width: 100%;
@@ -48,7 +58,7 @@ p, h1, h2, body{
     justify-content: center;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/dan-freeman-hIKVSVKH7No-unsplash.jpg');
-
+    grid-area: hero;
 }
 
 #hero-header{
@@ -68,6 +78,7 @@ p, h1, h2, body{
     display: flex;
     align-items: center;
     padding: 0 20% 0 20%;
+    grid-area: aboutme;
 
 }
 #aboutme-displaypic{ 
@@ -96,11 +107,23 @@ p, h1, h2, body{
     flex-direction: column;
 }
 
+.blog-wrapper{
+    height: 100vh;
+    background-color: whitesmoke;
+    grid-area: bloglink
+}
+/*blog post pages*/
 .blogsection{
-    height: 75vh;
+    height: auto;
     width: auto;
-    background-color: darkcyan;
+    background-color: #77BFA3;
     display: flex;
+    padding: 5% 0 5% 0;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #blogheader{
@@ -108,17 +131,14 @@ p, h1, h2, body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    height: auto;
+    width: auto;
 }
-
-.blogsection{
-    color: white;
-}
-
 
 .blogintro{
     color: white;
     height: 75vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/dan-freeman-hIKVSVKH7No-unsplash.jpg');
+    background-color: #23967F;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -128,13 +148,22 @@ p, h1, h2, body{
 
 #introwrap{
     text-align: left;
-    background-color: rgba(222, 184, 135, 0.76);
-    padding: 1%;
+    width: 60%;
+}
+
+#introwrap h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#introwrap p{
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 #paddingbox{
-    width: 700px;
-    height: 350px;
+    width: 55%;
+    height: 55%;
     background-color: rgba(128, 128, 128, 0.733);
     display: flex;
     align-items: center;
@@ -148,8 +177,8 @@ p, h1, h2, body{
 }
 
 #contentbox{
-    width: 650px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -178,3 +207,70 @@ p, h1, h2, body{
     align-items: center;
     justify-content: center;
 }
+
+#blogmargin{
+    background-color: #3F6D62;
+}
+
+#blogborder{
+    background-color: #4C8577;
+}
+
+#blogtext{
+    width: 70%;
+}
+
+#blogtext p{
+    margin-bottom: 10px;
+}
+
+#blogexplained{
+    font-style: italic;
+}
+
+#blog-example{
+    margin-top: 2%;
+    min-width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer{
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+.footer-wrapper{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-content{
+    border-color: blanchedalmond;
+    border-width: 2px;
+    border-style: solid;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+}
+
+.footer-content a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+        }
