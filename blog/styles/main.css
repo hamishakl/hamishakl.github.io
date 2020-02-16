@@ -8,12 +8,16 @@ display: grid;
     "header header header header"
     "hero hero hero hero"
     ". aboutme aboutme ."
+    "blogpost1 blogpost1 blogpost1 blogpost1"
+    "blogpost2 blogpost2 blogpost2 blogpost2"
+    "blogpost3 blogpost3 blogpost3 blogpost3"
+    "blogpost4 blogpost4 blogpost4 blogpost4"
     ". bloglink bloglink ."
     "footer footer footer footer";
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 
 p, h1, h2, body{
@@ -106,44 +110,28 @@ p, h1, h2, body{
     align-items: left;
     flex-direction: column;
 }
-
-.blog-wrapper{
-    height: 100vh;
-    background-color: whitesmoke;
-    grid-area: bloglink
-}
 /*blog post pages*/
 .blogsection{
-    height: auto;
-    width: auto;
+    height: 70vh;
     background-color: #77BFA3;
     display: flex;
-    padding: 5% 0 5% 0;
     color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-#blogheader{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: auto;
-    width: auto;
+    padding: 5%
 }
 
 .blogintro{
     color: white;
-    height: 75vh;
+    height: 100vh;
     background-color: #23967F;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    grid-area: hero;
 }
 
 #introwrap{
@@ -162,8 +150,8 @@ p, h1, h2, body{
 }
 
 #paddingbox{
-    width: 55%;
-    height: 55%;
+    width: 97%;
+    height: 91%;
     background-color: rgba(128, 128, 128, 0.733);
     display: flex;
     align-items: center;
@@ -177,8 +165,8 @@ p, h1, h2, body{
 }
 
 #contentbox{
-    width: 50%;
-    height: 50%;
+    width: 95%;
+    height: 85%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -187,33 +175,28 @@ p, h1, h2, body{
 
 #contentbox p{
     color: black;
-    font-weight: 500;
 }
 
-#border{
-    width: 710px;
-    height: 360px;
-    background-color: black;
+#contentbox2 {
+    width: 97%;
+    height: 91%;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#margin{
-    width: 760px;
-    height: 410px;
-    background-color: darkgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#contentbox2 p{
+    color: black;
 }
 
 #blogmargin{
-    background-color: #3F6D62;
+    background-color: #4C8577;
 }
 
 #blogborder{
     background-color: #4C8577;
+    grid-area: blogpost1;
 }
 
 #blogtext{
@@ -230,12 +213,13 @@ p, h1, h2, body{
 
 #blog-example{
     margin-top: 2%;
-    min-width: auto;
-    height: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    grid-area: example;
+    width: 70%;
 }
 .footer{
     height: 60vh;
@@ -274,3 +258,17 @@ p, h1, h2, body{
     text-decoration: none;
     margin-bottom: 5px;
         }
+
+#blogpadding{
+    grid-area: blogpost2;
+}
+
+#border-div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
