@@ -3,6 +3,7 @@
   <head>
     <title>Sprint 2 - Technical blog</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,800,900&display=swap" rel="stylesheet">
   </head>
@@ -27,14 +28,13 @@
     <div class="blogsection">
         <div id="blogtext">
           <h2>What is the border?</h2>
-          <p>Padding is the first layer of space between your actual content and border. It is applied to the inside of your element hence effecting how far your element's content is away from the border.</p>
-          <p>Below is an example of padding around some content. Notice that with the padding now applied, the border is pushed further away from the content. </p>
-          <p id="blogexplained">(Padding is transparent but for this example it will be a light grey).</p>
+          <p>A border is simply an outline around your content or element. You can change the style, width, color or radius in CSS. The border doesn't change the dimensions of the element.   </p>
+          <p>For this example I will be using a div but the same applies to any other element.</p>
         </div>
           <div id="blog-example">
             <div id="border-div">
               <div id="contentbox2">
-                <p>Content</p>
+                <p>Element</p>
               </div>
             </div>
           </div>
@@ -52,7 +52,27 @@
         <div id="border-div">
           <div id="paddingbox">
             <div id="contentbox">
-              <p>Content</p>
+              <p>Element</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blogmargin">
+    <div class="blogsection">
+      <div id="blogtext">
+        <h2>So what is the margin?</h2>
+        <p>Margin is applied to the outside of your content and affects how far away your element is from other elements. It doesn't alter the elements dimensions unlike padding which increases them. For example - 10px padding-top to a Div with 100px height will make the element 110px tall.</p>
+        <p id="blogexplained">(Margin is also transparent but for this example it will be a light grey).</p>
+      </div>
+      <div id="blog-example">
+        <div id="margin-div">
+          <div id="border-div2">
+            <div id="paddingbox">
+              <div id="contentbox2">
+                <p>Element</p>
+              </div>
             </div>
           </div>
         </div>
