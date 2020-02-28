@@ -176,7 +176,7 @@ p, h1, h2, body{
 .textblogpost{
     color: white;
     height: auto;
-    background-color: #23967F;
+    background-color: #77BFA3;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -189,6 +189,7 @@ p, h1, h2, body{
     text-align: left;
     width: 70%;
     padding-bottom: 10vh;
+    padding-top: 10vh;
 }
 
 #blogpost-wrap p{
@@ -240,7 +241,7 @@ p, h1, h2, body{
 }
 
 .introwrap p{
-    font-size: 2vw;
+    font-size: 1.7vw;
     font-style: italic;
 }
 
@@ -396,3 +397,6 @@ footer css*/
 /* footer done ---------------
 -----------start sprint 1 cultural*/
 
+#sprint3-h2 {
+    font-size: 4vw;
+}
