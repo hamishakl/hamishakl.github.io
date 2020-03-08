@@ -116,6 +116,13 @@ p, h1, h2, body{
     font-size: 3vw;
 }
 
+#neurolink {
+    color: white;
+    font-size: 1.2vw;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 .blog-wrapper{
     grid-area: bloglink;
     display: flex;
